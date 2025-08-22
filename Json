@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "builds": [{ "src": "api/discordProxy.ts", "use": "@vercel/node" }],
+  "routes": [{ "src": "/discord-webhook", "dest": "api/discordProxy.ts" }]
+}
