@@ -1,5 +1,9 @@
 {
-  "version": 2,
-  "builds": [{ "src": "api/discordProxy.ts", "use": "@vercel/node" }],
-  "routes": [{ "src": "/discord-webhook", "dest": "api/discordProxy.ts" }]
+  "name": "rbx-discord-bridge",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "express": "^4.19.2"
+  }
 }
